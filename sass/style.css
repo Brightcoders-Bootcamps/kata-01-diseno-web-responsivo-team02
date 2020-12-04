@@ -18,7 +18,11 @@ p {
   font-size: 18px;
 }
 
-img {
+.img-principal {
   width: 300px;
+}
+
+.logo {
+  width: 120px;
 }
 /*# sourceMappingURL=style.css.map */
