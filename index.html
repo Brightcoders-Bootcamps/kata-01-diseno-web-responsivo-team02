@@ -6,8 +6,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Shortly</title>
+    <link rel="stylesheet" href="sass/style.css">
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/shortener.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('hola mundo')
+            $.support.cors = true;
+            shortenerUrl('http://andresubilla.com')
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -104,7 +113,7 @@
 
         <section class="boost">
             <h2>Boost your links today</h2>
-            <button type="button">Get Started</button>
+            <button type="button"><h2>Get Started</h2></button>
         </section>
 
         <footer>

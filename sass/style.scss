@@ -1,3 +1,27 @@
+//Colors
+//Primary
+$Cyan: hsl(180, 66%, 49%);
+$LightCyan: hsla(180, 66%, 49%, 0.6);
+$DarkViolet: hsl(257, 27%, 26%);
+// Secondary
+$Red: hsl(0, 87%, 67%);
+//Neutral
+$Gray: hsl(0, 0%, 75%);
+$GrayishViolet: hsl(257, 7%, 63%);
+$VeryDarkBlue: hsl(255, 11%, 22%);
+$VeryDarkViolet: hsl(260, 8%, 14%);
+
+//Fonts
+$Font-Size:18px;
+$Font:'Poppins', sans-serif;
+$weight1:bolder;
+$weight2:medium;
+
+//Imge
+$img-principal-width: 300px;
+$img-logo-width:120px;
+
+/*IMPORTAMOS LA FUENTE DE GOOGLE POPPINS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 .container {
@@ -21,18 +45,22 @@ html {
 body {
     margin: 0;
     font: 500 18px/1.5;
-    font-family: 'Poppins', sans-serif;
+    font-family: $Font;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: $Font;
+    font-weight: $weight2;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: $Font;
     margin: 0;
 }
 
@@ -41,7 +69,7 @@ p {
 }
 
 input {
-    font-family: 'Poppins', sans-serif;
+    font-family: $Font;
 }
 
 /*HEADER*/
@@ -78,7 +106,7 @@ header .toggle-nav {
 }
 
 header .toggle-nav .icon-menu {
-    fill:  hsl(0, 0%, 75%);
+    fill:  $Gray;
 }
 /*END-HAMBURGUER-BUTTON*/
 
@@ -92,11 +120,11 @@ header .navbar-nav {
 header .navbar-nav a {
     margin-right: 30px;
     text-decoration: none;
-    color: hsl(257, 7%, 63%);
+    color: $GrayishViolet;
 }
 
 header .navbar-nav a:active {
-    color: hsl(257, 27%, 26%);
+    color: $DarkViolet;
 }
 
 header .btn-login {
@@ -132,7 +160,7 @@ header .btn-signup{
         top: 90px;
         left: 15px;
         right: 15px;
-        background-color: hsl(257, 27%, 26%);
+        background-color: $DarkViolet;
         display: flex;
         flex-direction: column;
         padding: 20px 24px 40px;
@@ -146,7 +174,7 @@ header .btn-signup{
     }
 
     header .navbar-nav a:active {
-        color:  hsl(0, 0%, 75%);
+        color:  $Gray;
     }
 
     header .btn {
@@ -163,11 +191,11 @@ header .btn-signup{
     }
 
     header .btn-login:active {
-        color:  hsl(0, 0%, 75%);
+        color:  $Gray;
     }
 
     .separator-mobile {
-        background:  hsl(0, 0%, 75%);
+        background:  $Gray;
         height: 1px;
         align-self: stretch;
         margin: 20px 0 30px;
@@ -181,19 +209,19 @@ header .btn-signup{
 
 /*HELPFUL-BUTTONS-CLASSES*/
 .btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: $Font;
     border-radius: 30px;
     padding: 18px 40px;
     border: none;
     cursor: pointer;
     font-size: 20px;
     line-height: 1;
-    background-color: hsl(180, 66%, 49%);
+    background-color: $Cyan;
     color: white;
 }
 
 .btn:active{
-    background-color: hsla(180, 66%, 49%, 0.6);
+    background-color: $LightCyan;
 }
 /*END-HELPFUL-BUTTONS-CLASSES*/
 
@@ -228,7 +256,7 @@ header .btn-signup{
     display: block;
     max-width: 70%;
     font-size: 18px;
-    color: hsl(257, 7%, 63%);
+    color: $GrayishViolet;
 }
 
 .presentation .img-working {
@@ -251,7 +279,7 @@ header .btn-signup{
     }
 
     .presentation .description {
-        color: hsl(257, 7%, 63%);
+        color: $GrayishViolet;
         text-align: center;
         max-width: none;
         margin-bottom: 35px;
