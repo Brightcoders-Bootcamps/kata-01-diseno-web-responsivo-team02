@@ -7,6 +7,10 @@
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -42,19 +46,21 @@
 
     <main>
         <section class="presentation">
-            <img src="./images/illustration-working.svg" alt="woman working on her desktop">
-            <h1>More than just shorter links</h1>
-            <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-            <button type="button">Get Started</button>
-            <form>
-                <input type="text" name="complete link" placeholder="Shorten a link here..." required>
-                <button type="button">Shorten it!</button>
-            </form>
+            <div class="flex-box">
+                <img src="./images/illustration-working.svg" alt="woman working on her desktop">
+                <h1>More than just shorter links</h1>
+                <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                <button type="button"><h2>Get Started</h2></button>
+                <form>
+                    <input type="text" name="complete link" placeholder="Shorten a link here..." required>
+                    <button type="button"><h3>Shorten it!</h3></button>
+                </form>
+            </div>
         </section>
 
         <section class="benefits">
             <div><!--general description of benefits-->
-                <h2>Advanced Statistics</h2>
+                <h2 class="font-principal">Advanced Statistics</h2>
                 <p>Track how your links are performing across the web with our 
                     advanced statistics dashboard.</p>
             </div>
@@ -84,7 +90,7 @@
 
         <section class="boost">
             <h2>Boost your links today</h2>
-            <button type="button">Get Started</button>
+            <button type="button"><h2>Get Started</h2></button>
         </section>
     </main>
 

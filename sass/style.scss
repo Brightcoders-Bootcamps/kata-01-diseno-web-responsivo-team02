@@ -10,7 +10,31 @@ $GrayishViolet: hsl(257, 7%, 63%);
 $VeryDarkBlue: hsl(255, 11%, 22%);
 $VeryDarkViolet: hsl(260, 8%, 14%);
 
+//Fonts
+$Font-Size:18px;
+$Font:'Poppins', sans-serif;
+$weight1:bolder;
+$weight2:medium;
+
+//Imge
+$img-width: 300px;
+
 *{
     margin: 0;
     padding: 0;
+    font-family: $Font;
+    font-weight: $weight2;
+}
+div{
+    width: 375px;
+}
+.font-principal{
+    font-family: $Font;
+    font-weight: $weight1;
+}
+p{
+    font-size: $Font-Size;
+}
+img{
+    width: $img-width;
 }
