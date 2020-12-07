@@ -12,13 +12,12 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/shortener.js"></script>
   <script>
     $(document).ready(function() {
-        console.log('hola mundo')
-      $.support.cors = true;
-      shortenerUrl('http://andresubilla.com')
+
     });
   </script>
 </head>
@@ -35,7 +34,7 @@
             </ul>
             <ul>
                 <li>Login</li>
-                <button type="button">Sign Up</button>
+                <button type="button" onClick="shortenerUrl('http://andresubilla.com');">Sign Up</button>
             </ul>
         </nav>
     </header>
