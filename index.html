@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Shortly</title>
+    <link rel="stylesheet" href="sass/style.css">
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/shortener.js"></script>
-  <script>
-    $(document).ready(function() {
-
-    });
-  </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/shortener.js"></script>
+    <script>
+        $(document).ready(function() {
+            shortenerUrl('http://andresubilla.com')
+        });
+    </script>
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <input type="checkbox" id="nav-visible" tabindex="-1" />
 
     <header>
         <img src="./images/logo.svg" alt="logo">
@@ -38,32 +35,77 @@
             </ul>
         </nav>
     </header>
+            <div class="navbar">
+                <a href="/" class="navbar-logo">
+                    <img src="images/logo.svg" alt="main-logo"/>
+                </a>
 
-    <main>
-        <section class="presentation">
-            <img src="./images/illustration-working.svg" alt="woman working on her desktop">
-            <h1>More than just shorter links</h1>
-            <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-            <button type="button">Get Started</button>
-            <form>
-                <input type="text" name="complete link" placeholder="Shorten a link here..." required>
-                <button type="button">Shorten it!</button>
-            </form>
-        </section>
+                <label for="nav-visible" class="toggle-nav">
+                    <svg class="icon-menu" width="25" viewBox="0 0 512 512">
+                    <g>
+                        <path
+                            d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"
+                        ></path>
+                    </g>
+                    <g>
+                        <path
+                            d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"
+                        ></path>
+                    </g>
+                    <g>
+                        <path
+                            d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20C512,404.954,503.046,396,492,396z"
+                        ></path>
+                    </g>
+                    </svg>
+                </label>
+
+                <nav class="navbar-nav">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Resources</a>
+
+                    <div class="separator-mobile"></div>
+
+                    <a href="#" class="btn-login">Login</a>
+                    <button type="button" class="btn btn-signup">Sign Up</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="presentation">
+            <div class="welcome-text">
+                <h1 class="title">More than just shorter links</h1>
+                <p class="description">
+                    Build your brand’s recognition and get detailed insights on how your links are
+                    performing.
+                </p>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="img-working">
+                <img src="images/illustration-working.svg" alt="woman working on her desktop">
+            </div>
+        </div>
+
+        <form>
+            <input type="text" name="complete link" placeholder="Shorten a link here..." required>
+            <button type="button">Shorten it!</button>
+        </form>
 
         <section class="benefits">
-            <div><!--general description of benefits-->
+            <div>
                 <h2>Advanced Statistics</h2>
                 <p>Track how your links are performing across the web with our 
                     advanced statistics dashboard.</p>
             </div>
-            <div> <!--particular benefits-->
-                <div class="image"></div> <!--should we put the image as background or as an element inside the tag -->
+            <div>
+                <div class="image"></div>
                 <div class="text">
                 <h3>Brand Recognition</h3>
                 <p>Boost your brand recognition with each click. Generic links don’t 
                     mean a thing. Branded links help instil confidence in your content.</p>
-                 </div>
+                </div>
                 <div class="line"></div>
                 <div class="image"></div>
                 <div class="text">
@@ -83,50 +125,45 @@
 
         <section class="boost">
             <h2>Boost your links today</h2>
-            <button type="button">Get Started</button>
+            <button type="button"><h2>Get Started</h2></button>
         </section>
-    </main>
 
-    <footer>
-        <img src="./images/logo.svg" alt="logo">
-        <nav>
+        <footer>
+            <img src="./images/logo.svg" alt="logo">
+            <nav>
+                <div>
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Link Shortening</li>
+                        <li>Branded Links</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Developers</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Our Team</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
             <div>
-                <h4>Features</h4>
-                <ul>
-                    <li>Link Shortening</li>
-                    <li>Branded Links</li>
-                    <li>Analytics</li>
-                </ul>
+                <img src="./images/icon-facebook.svg" alt="facebook logo">
+                <img src="./images/icon-twitter.svg" alt="twiter logo">
+                <img src="./images/icon-pinterest.svg" alt="pinterest logo">
+                <img src="./images/icon-instagram.svg" alt="instagram logo">
             </div>
-            <div>
-                <h4>Resources</h4>
-                <ul>
-                    <li>Blog</li>
-                    <li>Developers</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li>About</li>
-                    <li>Our Team</li>
-                    <li>Careers</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
-        <div>
-            <img src="./images/icon-facebook.svg" alt="facebook logo">
-            <img src="./images/icon-twitter.svg" alt="twiter logo">
-            <img src="./images/icon-pinterest.svg" alt="pinterest logo">
-            <img src="./images/icon-instagram.svg" alt="instagram logo">
-        </div>
-    </footer>
-  
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Team02</a>.
+        </footer>
     </div>
-  </body>
+</body>
 </html>
