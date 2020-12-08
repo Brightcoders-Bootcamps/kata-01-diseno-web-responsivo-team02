@@ -500,6 +500,18 @@ header .btn-signup {
   padding: 30px;
 }
 
+.image {
+  background-color: #232127;
+  width: 90px;
+  height: 90px;
+  border-radius: 250px;
+  margin: 0px auto;
+}
+
+.image img {
+  padding: 20px;
+}
+
 /*end benefits*/
 .boost {
   -ms-grid-column: 2;

@@ -435,7 +435,16 @@ header .btn-signup{
 .advanced {
     padding: 30px;
 }
-
+.image{
+    background-color: $VeryDarkViolet;
+    width: 90px;
+    height: 90px;
+    border-radius:250px;
+    margin: 0px auto;
+}
+.image img{
+    padding: 20px;
+}
 /*end benefits*/
 .boost{
     grid-column: 2/3;
