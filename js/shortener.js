@@ -14,11 +14,12 @@ function shortenerUrl() {
                if (response.data.ok) {
                   let html = $("#linksShortendedList").html();
                   html += '<div class="shortened-links-list-item">' +
-                     '<div class="origin-link">'+response.data.result.original_link+'</div>' +
+                        '<div class="origin-link">'+response.data.result.original_link+'</div>' +
                         '<div class="short-link">' +
-                           '<input id="'+response.data.result.code+'" class="short-link-hidden" value="'+response.data.result.short_link+'"><a href="'+response.data.result.short_link+'" title="'+response.data.result.short_link+'" target="_blank">'+response.data.result.short_link+'</a>' +
+                           //<input id="'+response.data.result.code+'" class="short-link-hidden" value="'+response.data.result.short_link+'">
+                           '<a href="'+response.data.result.short_link+'" title="'+response.data.result.short_link+'" target="_blank">'+response.data.result.short_link+'</a>' +
                         '</div>' +
-                        '<div class="copy-link"><a href="#"><span class="" onClick="copyUrlShort(\''+response.data.result.code+'\')">Copy</span></a></div>' +
+                        '<button class="btn-small" type="button" onClick="copyUrlShort(\''+response.data.result.code+'\')">Copy</button>' +
                      '</div>';
 
                   $("#linksShortendedList").html(html).fadeIn('fast');
@@ -94,11 +95,12 @@ function getDataLocalStorage() {
          let html = "";
          for (var i = 0; i < objTmp["links"].length; i++) {
             html += '<div class="shortened-links-list-item">' +
-               '<div class="origin-link">'+objTmp["links"][i].link+'</div>' +
-               '<div class="short-link">' +
-               '<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'"><a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
-               '</div>' +
-               '<div class="copy-link"><a href="#"><span class="" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</span></a></div>' +
+                  '<span class="origin-link">'+objTmp["links"][i].link+'</span>' +
+                  '<div class="short-link">' +
+                     //<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'">
+                     '<a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
+                  '</div>' +
+                  '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</button>' +
                '</div>';
          }
 
