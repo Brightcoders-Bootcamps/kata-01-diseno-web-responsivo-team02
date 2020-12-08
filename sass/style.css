@@ -425,7 +425,7 @@ header .btn-signup {
     padding-block: 35px;
   }
   .formshort form input, .formshort form button {
-    margin-left: 50px;
+    margin-left: 60px;
   }
   .formshort form input {
     border-radius: 10px;
@@ -490,6 +490,7 @@ header .btn-signup {
   display: grid;
   text-align: center;
   font-size: 18px;
+  background-color: #bfbfbf;
 }
 
 .benefits p {
@@ -510,6 +511,12 @@ header .btn-signup {
 
 .image img {
   padding: 20px;
+}
+
+.text {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
 }
 
 /*end benefits*/
