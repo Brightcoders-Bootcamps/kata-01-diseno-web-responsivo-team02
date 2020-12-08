@@ -507,6 +507,8 @@ header .btn-signup {
   height: 90px;
   border-radius: 250px;
   margin: 0px auto;
+  position: relative;
+  top: 70px;
 }
 
 .image img {
