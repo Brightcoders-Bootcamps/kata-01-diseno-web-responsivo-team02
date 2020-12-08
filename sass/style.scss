@@ -313,12 +313,12 @@ header .btn-signup{
 /*END-PRESENTATION*/
 /*Formshort*/
 .formshort{
-    grid-column: 2/4;
-    display: grid;
-    grid-template-columns: inherit;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: -80px;
 }
 .formshort form{
     width: 100%;
@@ -364,7 +364,7 @@ header .btn-signup{
     .formshort{
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: -70px;
         grid-column: 2/3;
     }
     .formshort form{
@@ -435,19 +435,67 @@ header .btn-signup{
     color: $Cyan;
 }
 
-.statistics{
+/*ADVANCE STATISTICS*/
+.background-gray{
     grid-column: 1/4;
     display: grid;
     grid-template-columns: inherit;
-    background-color: #f0f1f6;
-    padding: 210px 0 100px;
-    margin-top: -190px;
+    background-color:#f0f1f6;
+    margin-top: 150px;
     z-index: -1;
 }
 .benefits{
     grid-column: 2/3;
+    display: grid;
+    text-align: center;
+    font-size: 18px;
 }
-
+.benefits p{
+    color: $GrayishViolet;
+}
+.advanced {
+    padding: 30px;
+}
+.line{
+    background-color: $Cyan;
+    width: 10px;
+    height: 100px;
+    margin: 0px auto;
+    position: relative;
+    top: 70px;
+}
+.image{
+    background-color: $VeryDarkViolet;
+    width: 90px;
+    height: 90px;
+    border-radius:250px;
+    margin: 0px auto;
+    position: relative;
+    top: 70px;
+}
+.image img{
+    padding: 20px;
+}
+.text{
+    grid-column: 2/3;
+    padding: 30px;
+    padding-top:80px;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+.conten2{
+    position: relative;
+    top: -100px;
+}
+.conten3{
+    position: relative;
+    top: -200px;
+}
+.text h3{
+    line-height: 3;
+}
+/*end benefits*/
 .boost{
     grid-column: 2/3;
 }
