@@ -447,9 +447,15 @@ header .btn-signup{
     padding: 20px;
 }
 .text{
+    grid-column: 2/3;
     padding: 30px;
+    padding-top:80px;
+    margin: 30px;
     border-radius: 15px;
     background-color: white;
+}
+.text h3{
+    line-height: 3;
 }
 /*end benefits*/
 .boost{
