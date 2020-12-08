@@ -490,7 +490,6 @@ header .btn-signup {
   display: grid;
   text-align: center;
   font-size: 18px;
-  background-color: #bfbfbf;
 }
 
 .benefits p {
@@ -499,6 +498,15 @@ header .btn-signup {
 
 .advanced {
   padding: 30px;
+}
+
+.line {
+  background-color: #2acfcf;
+  width: 10px;
+  height: 100px;
+  margin: 0px auto;
+  position: relative;
+  top: 70px;
 }
 
 .image {
@@ -524,6 +532,16 @@ header .btn-signup {
   margin: 30px;
   border-radius: 15px;
   background-color: white;
+}
+
+.conten2 {
+  position: relative;
+  top: -100px;
+}
+
+.conten3 {
+  position: relative;
+  top: -200px;
 }
 
 .text h3 {

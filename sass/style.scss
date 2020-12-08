@@ -428,13 +428,20 @@ header .btn-signup{
     display: grid;
     text-align: center;
     font-size: 18px;
-    background-color: $Gray;
 }
 .benefits p{
     color: $GrayishViolet;
 }
 .advanced {
     padding: 30px;
+}
+.line{
+    background-color: $Cyan;
+    width: 10px;
+    height: 100px;
+    margin: 0px auto;
+    position: relative;
+    top: 70px;
 }
 .image{
     background-color: $VeryDarkViolet;
@@ -455,6 +462,14 @@ header .btn-signup{
     margin: 30px;
     border-radius: 15px;
     background-color: white;
+}
+.conten2{
+    position: relative;
+    top: -100px;
+}
+.conten3{
+    position: relative;
+    top: -200px;
 }
 .text h3{
     line-height: 3;
