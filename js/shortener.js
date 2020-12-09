@@ -55,7 +55,7 @@ function copyUrlShort(code,ele) {
    document.execCommand("copy");
    $(ele).text("Copied").css("background-color","#4B3F6B");
    console.log("texto copiado: " + copyText.value);
-   alert("texto copiado: " + copyText.value);
+   //alert("texto copiado: " + copyText.value);
 }
 
 /* funcion para validar url */
