@@ -65,7 +65,7 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 - [ ] Actualizar la sección **Página Web** con la dirección para el acceso a la página web publicada
 
 ## Página web
-shrtco.de/fmoXHL
+(shrtco.de/fmoXHL)
   
 ## Evaluación / Revisión
 
