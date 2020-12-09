@@ -16,7 +16,7 @@ function shortenerUrl() {
                   html += '<div class="shortened-links-list-item">' +
                         '<div class="origin-link">'+response.data.result.original_link+'</div>' +
                         '<div class="short-link">' +
-                           //<input id="'+response.data.result.code+'" class="short-link-hidden" value="'+response.data.result.short_link+'">
+                           '<input id="'+response.data.result.code+'" value="'+response.data.result.short_link+'" class="short-link-hidden">' +
                            '<a href="'+response.data.result.short_link+'" title="'+response.data.result.short_link+'" target="_blank">'+response.data.result.short_link+'</a>' +
                         '</div>' +
                         '<button class="btn-small" type="button" onClick="copyUrlShort(\''+response.data.result.code+'\')">Copy</button>' +
@@ -97,7 +97,7 @@ function getDataLocalStorage() {
             html += '<div class="shortened-links-list-item">' +
                   '<span class="origin-link">'+objTmp["links"][i].link+'</span>' +
                   '<div class="short-link">' +
-                     //<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'">
+                     '<input id="'+objTmp["links"][i].code+'" value="'+objTmp["links"][i].short+'" class="short-link-hidden">' +
                      '<a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
                   '</div>' +
                   '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</button>' +
