@@ -361,6 +361,13 @@ header .btn-signup{
     color: white;
     white-space: nowrap;
 }
+.error{
+    border: 2px solid red !important;
+}
+#error-message{
+    display: none;
+    color: red;
+}
 
 @media (min-width: 376px){
     .formshort{
@@ -715,7 +722,7 @@ header .btn-signup{
         width: 60%;
     }
 }
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 376px){
     .boost{
         background-image: url('../images/bg-boost-desktop.svg');
         height: 250px;
@@ -760,14 +767,14 @@ footer{
     }
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 376px) {
     footer {
         flex-direction: row;
         height: 325px;
         align-items: start;
         nav {
             display: flex;
-            flex: 2.4;
+            flex: 1.8;
             text-align: start;
             justify-content: space-around;
             padding-top: 70px;
@@ -776,16 +783,16 @@ footer{
             padding-top: 0;
         }
         .footer-logo{
-            flex: 2;
+            flex: 1.1;
             padding-top: 70px;
             display: flex;
             justify-content: center;
         }
         .final-box{
-            flex: 1.2;
+            flex: .85;
             padding-top: 70px;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
         }
     } 
 }
