@@ -21,7 +21,7 @@ function shortenerUrl() {
                            '<input id="'+response.data.result.code+'" value="'+response.data.result.short_link+'" class="short-link-hidden">' +
                            '<a href="'+response.data.result.short_link+'" title="'+response.data.result.short_link+'" target="_blank">'+response.data.result.short_link+'</a>' +
                         '</div>' +
-                        '<button class="btn-small" type="button" onClick="copyUrlShort(\''+response.data.result.code+'\')">Copy</button>' +
+                        '<button class="btn-small" type="button" onClick="copyUrlShort(\''+response.data.result.code+'\',this)">Copy</button>' +
                      '</div>' +
                      '</div>';
 
