@@ -306,6 +306,7 @@ header .btn-signup{
     }
     .presentation img {
         margin-bottom: 40px;
+        margin-left: 160px;
         object-position: 0px 0;
         width: 100%;
     }
@@ -358,7 +359,6 @@ header .btn-signup{
     line-height: 1;
     background-color: $Cyan;
     color: white;
-    display: table-cell;
     white-space: nowrap;
 }
 
