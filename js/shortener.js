@@ -38,11 +38,13 @@ function shortenerUrl() {
             .catch(error => console.log(error))
       } else {
          $("#linkToShort").addClass("error");
+         $("#error-message").html("Enter a valid link").show();
          console.log("NO ES UNA URL VALIDA");
          //alert("NO ES UNA URL VALIDA");
       }
    } else {
       $("#linkToShort").addClass("error");
+      $("#error-message").html("Please add a link").show();
       console.log("DEBE INGRESAR UNA URL");
       //alert("DEBE INGRESAR UNA URL");
    }
