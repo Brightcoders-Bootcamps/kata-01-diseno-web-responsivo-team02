@@ -382,6 +382,8 @@ header .btn-signup {
   line-height: 1;
   background-color: #2acfcf;
   color: white;
+  display: table-cell;
+  white-space: nowrap;
 }
 
 @media (min-width: 376px) {

@@ -348,6 +348,8 @@ header .btn-signup{
     line-height: 1;
     background-color: $Cyan;
     color: white;
+    display: table-cell;
+    white-space: nowrap;
 }
 @media (min-width: 376px){
     .formshort{
