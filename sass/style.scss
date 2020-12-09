@@ -579,7 +579,7 @@ header .btn-signup{
 /*end benefits*/
 /*START OF BOOST SECTION*/
 .boost {
-    grid-column: 2/3;
+    grid-column: 1/4;
     background-image: url('../images/bg-boost-mobile.svg');
     background-size: cover;
     background-position: center;
@@ -622,7 +622,7 @@ header .btn-signup{
 /*START OF FOOTER*/
 
 footer{
-    grid-column: 2/3;
+    grid-column: 1/4;
     height: 800px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(260, 8%, 14%);
