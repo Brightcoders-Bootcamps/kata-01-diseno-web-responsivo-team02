@@ -2,7 +2,7 @@ const URL_SERVICE = 'https://api.shrtco.de/v2/shorten?url=';
 
 /* funcion que acorta una url dada */
 function shortenerUrl() {
-   $("#linkToShort").removeClass("error").hide();
+   $("#linkToShort").removeClass("error");
    let url = $("#linkToShort").val();
 
    if (url != '') {
@@ -37,12 +37,12 @@ function shortenerUrl() {
             })
             .catch(error => console.log(error))
       } else {
-         $("#linkToShort").addClass("error").show();
+         $("#linkToShort").addClass("error");
          console.log("NO ES UNA URL VALIDA");
          //alert("NO ES UNA URL VALIDA");
       }
    } else {
-      $("#linkToShort").addClass("error").show();
+      $("#linkToShort").addClass("error");
       console.log("DEBE INGRESAR UNA URL");
       //alert("DEBE INGRESAR UNA URL");
    }
