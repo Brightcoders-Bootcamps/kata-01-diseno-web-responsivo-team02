@@ -362,7 +362,11 @@ header .btn-signup{
     white-space: nowrap;
 }
 .error{
-    border: 2px solid red;
+    border: 2px solid red !important;
+}
+#error-message{
+    display: none;
+    color: red;
 }
 
 @media (min-width: 376px){
