@@ -407,6 +407,10 @@ header .btn-signup {
   white-space: nowrap;
 }
 
+.error {
+  border: 2px solid red;
+}
+
 @media (min-width: 376px) {
   .formshort {
     -ms-grid-column: 2;

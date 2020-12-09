@@ -361,6 +361,9 @@ header .btn-signup{
     color: white;
     white-space: nowrap;
 }
+.error{
+    border: 2px solid red;
+}
 
 @media (min-width: 376px){
     .formshort{
