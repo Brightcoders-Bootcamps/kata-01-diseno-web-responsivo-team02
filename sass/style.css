@@ -549,15 +549,169 @@ header .btn-signup {
 }
 
 /*end benefits*/
+/*START OF BOOST SECTION*/
 .boost {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+.boost h2, .boost h3 {
+  color: white;
+}
+
+.contain-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.contain-text h2 {
+  padding-bottom: 20px;
+}
+
+.contain-text button {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #2acfcf;
+  background-color: #2acfcf;
+  width: 60%;
+}
+
+@media only screen and (min-width: 375px) {
+  .boost {
+    background-image: url("../images/bg-boost-desktop.svg");
+    height: 250px;
+  }
+}
+
+/*END OF BOOST SECTION*/
+/*START OF FOOTER*/
 footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  height: 800px;
+  color: white;
+  background-color: #232127;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+footer img {
+  padding-bottom: 10px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+footer h4 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer li {
+  color: #bfbfbf;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+footer nav {
+  text-align: center;
+}
+
+.final-box {
+  padding-top: 40px;
+}
+
+.final-box img {
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 580px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 325px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 2.4;
+        -ms-flex: 2.4;
+            flex: 2.4;
+    text-align: start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 70px;
+  }
+  footer h4 {
+    padding-top: 0;
+  }
+  footer .footer-logo {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .final-box {
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*END OF FOOTER*/
 /*# sourceMappingURL=style.css.map */
