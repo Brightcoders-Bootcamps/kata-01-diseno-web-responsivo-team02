@@ -94,13 +94,16 @@ function getDataLocalStorage() {
          objTmp = JSON.parse(obj);
          let html = "";
          for (var i = 0; i < objTmp["links"].length; i++) {
-            html += '<div class="shortened-links-list-item">' +
+            html += '<div class="links-Shortended-List">' +
                   '<span class="origin-link">'+objTmp["links"][i].link+'</span>' +
-                  '<div class="short-link">' +
-                     //<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'">
-                     '<a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
+                  '<div class="separator-short"></div>' +
+                  '<div class="copy-short-link">' +
+                     '<div class="short-link">' +
+                        //<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'">
+                        '<a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
+                     '</div>' +
+                     '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</button>'+
                   '</div>' +
-                  '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</button>' +
                '</div>';
          }
 
