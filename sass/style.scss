@@ -455,6 +455,11 @@ header .btn-signup{
     text-decoration: none;
     color: $Cyan;
 }
+.short-link-hidden {
+    border: 0;
+    position: absolute;
+    top: -9999px;
+}
 
 @media (min-width: 376px){
     #linksShortendedList{
