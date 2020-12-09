@@ -46,13 +46,14 @@ function shortenerUrl() {
 }
 
 /* funcion que copia la url corta en un link */
-function copyUrlShort(code) {
+function copyUrlShort(code,ele) {
    console.log("code: " + code);
 
    var copyText = document.getElementById(code);                                       //SET REAL NAME INPUT
    copyText.select();
    copyText.setSelectionRange(0, 99999);                                     //For mobile devices
    document.execCommand("copy");
+   $(ele).text("Copied").css("background-color","#4B3F6B");
    console.log("texto copiado: " + copyText.value);
    alert("texto copiado: " + copyText.value);
 }
@@ -105,7 +106,7 @@ function getDataLocalStorage() {
                         '<input id="'+objTmp["links"][i].code+'" class="short-link-hidden" value="'+objTmp["links"][i].short+'">' +
                         '<a href="'+objTmp["links"][i].short+'" title="'+objTmp["links"][i].short+'" target="_blank">'+objTmp["links"][i].short+'</a>' +
                      '</div>' +
-                     '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\')">Copy</button>'+
+                     '<button class="btn-small" type="button" onClick="copyUrlShort(\''+objTmp["links"][i].code+'\',this)">Copy</button>'+
                   '</div>' +
                '</div>';
          }
