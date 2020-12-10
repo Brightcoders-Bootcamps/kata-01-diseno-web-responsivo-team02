@@ -329,24 +329,29 @@ header .btn-signup{
     background-color: $DarkViolet;
     border-radius: 15px;
     padding-block: 30px;
+    align-items: center;
+    text-align: center;
+}
+.input-error{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
 }
-.formshort form input, .formshort form button{
+.formshort form .input-error input, .formshort form button{
     margin-left: 0px;
     width: 80%;
     height: 50%;
     border-radius: 5px;
 }
-.formshort form input{
+.formshort form .input-error input{
     padding: 10px 20px;
     border: none;
     font-family: $Font;
     margin-bottom: 10px;
     font-size: 16px;
+}
+.formshort form .input-error span{
+    margin-left: -40%;
 }
 .formshort form button {
     margin-top: 10px;
@@ -367,6 +372,7 @@ header .btn-signup{
 #error-message{
     display: none;
     color: red;
+    font-style: italic;
 }
 
 @media (min-width: 376px){
@@ -374,12 +380,12 @@ header .btn-signup{
         grid-column: 2/3;
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         margin-top: -5%;
     }
     .formshort form{
         width: 100%;
-        height: 50%;
+        height: 100%;
         grid-row: 1;
         display: flex;
         flex-direction: row;
@@ -392,19 +398,29 @@ header .btn-signup{
         padding-right: 50px;
         padding-block: 35px;
     }
-    .formshort form input, .formshort form button{
+    .input-error{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        margin-right: 50px;
+    }
+    .formshort form .input-error input, .formshort form button{
         margin-left: 50px;
         width: auto;
         height: auto;
         border-radius: 10px;
     }
-    .formshort form input{
+    .formshort form .input-error input{
         margin-bottom: 0px;
         padding: 15px;
         border: none;
         width: 100%;
         font-family: $Font;
         font-size: 16px;
+    }
+    .formshort form .input-error span{
+        margin-top: 5px;
     }
     .formshort form button {
         margin-top: 0px;
@@ -420,6 +436,9 @@ header .btn-signup{
     }
     .btn-sh:active{
         background-color: $LightCyan;
+    }
+    #error-message{
+        margin-left: 50px;
     }
 }
 

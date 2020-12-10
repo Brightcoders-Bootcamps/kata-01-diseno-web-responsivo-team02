@@ -79,9 +79,11 @@
     <div class="background-gray">
         <div class="formshort" >
             <form>
-                <input id="linkToShort" type="text" name="complete link" placeholder="Shorten a link here..." required>
+                <div class="input-error">
+                    <input id="linkToShort" type="text" name="complete link" placeholder="Shorten a link here..." required>
+                    <span id="error-message" style="display:none;"></span>
+                </div>
                 <button class="btn-sh" type="button" onClick="shortenerUrl()">Shorten it!</button><br />
-                <span id="error-message" style="display:none;"></span>
             </form>
             <div id="linksShortendedList" style="display:none;"></div>
         </div>
