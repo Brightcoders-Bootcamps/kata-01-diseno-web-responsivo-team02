@@ -65,7 +65,7 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 - [ ] Actualizar la sección **Página Web** con la dirección para el acceso a la página web publicada
 
 ## Página web
-Agrega aquí un enlace a tu página web publicada.
+- [Git Page Kata01](https://brightcoders-bootcamps.github.io/kata-01-diseno-web-responsivo-team02/)
   
 ## Evaluación / Revisión
 
